@@ -7,7 +7,6 @@ const TerserPlugin = require('terser-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
-
 module.exports = {
     entry: './src/index.js',
     output: {
@@ -77,7 +76,7 @@ module.exports = {
                 }
             ]
         }),
-        new  Dotenv(),
+        new Dotenv(),
         new CleanWebpackPlugin(),
     ],
     optimization: {
